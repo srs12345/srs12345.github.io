@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<style>
+	body{
+	padding: 0px;
+	margin:0;
+	background-image: url("back2.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 100%;
+}
+	.container,.container dd{
+		margin: 0;
+		padding: 0;
+		
+
+	}
+	.container dd{
+		border:1px solid DeepSkyBlue;
+	/*border-top:none;*/
+	border-radius:0 0 7px 7px;
+	padding-top:20px;
+	padding:70px;
+	}
+	.row{
+		display: flex;
+		height: auto;
+		justify-content: space-between;
+		align-items: center;		
+		/*transform:translateX(-25px);*/
+	}
+	.paragraph{ 
+
+		/*margin:2px 2px;*/
+		
+		flex-direction: row;
+		/*justify-content: space-between;*/
+		/*align-items: center;*/
+		/*flex-grow: 2;*/
+	}
+	p{
+		font-size: 24px;
+		/*word-break: break-all;*/
+		/*margin: 10px 10px 10px 0px;
+		padding:1px 5px 20px 5px;
+		font-size: 19px;
+*/
+	}
+	.myimage{
+		display: flex;
+		/*flex-grow: 1;*/
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;*/
+		width: 500px;
+	}
+	.container dt{
+	background:DeepSkyBlue;
+	border-bottom:1px solid blue;
+	border-radius:7px 7px 0 0;
+	color:white;
+	font-size:1.5em;
+	margin-top:0.222em;
+	padding:0.5em 1em;
+	/*transition: all 300ms;*/
+}
+.jsOn  dt{
+	border-radius:7px;
+	cursor:pointer;
+}
+.jsOn .container dt:before{
+	content: '+';
+	margin-right: 0.5em;
+}
+.container dt.open{
+	background:DarkOrange;
+	border-color:Chocolate;
+	border-radius: 7px 7px 0 0;
+}
+.container dd:after{
+	content: '';
+	
+}
+/*.container dd p{
+	line-height:1.0;
+} */
+</style>
+	<title>Collapse Accordian</title>
+</head>
+<body class="jsOff">
+<div class="container">
+	<div class="head">
+			<h1>Most Popular cities in the World</h1>
+		</div>
+			<dl>
+			<dt>Shanghai</dt>
+
+			<dd>
+				<div class="row">
+	
+				<div class=".paragraph"><p>
+				Shanghai, on China’s central coast, is the country's biggest city and a global financial hub. Its heart is the Bund, a famed waterfront promenade lined with colonial-era buildings. Across the Huangpu River rises the Pudong district’s futuristic skyline, including 632m Shanghai Tower and the Oriental Pearl TV Tower, with distinctive pink spheres. Sprawling Yu Garden has traditional pavilions, towers and ponds.</p>
+			</div>
+					<div class="myimage"><img src="image1.jpg" style="height: 120px;width: 120px;"></div>
+
+				</div>
+			</dd>	
+
+			</dl>
+			<dl>
+			<dt>Beijing</dt>
+
+			<dd>
+				<div class="row">
+	
+				<div class=".paragraph"><p>
+				Beijing, China’s massive capital, has history stretching back 3 millennia. Yet it’s known as much for its modern architecture as its ancient sites such as the grand Forbidden City complex, the imperial palace during the Ming and Qing dynasties. Nearby, the massive Tiananmen Square pedestrian plaza is the site of Mao Zedong’s mausoleum and the National Museum of China, displaying a vast collection of cultural relics.</p>
+			</div>
+					<div class="myimage"><img src="image2.jpg" style="height: 120px;width: 120px;"></div>
+
+				</div>
+			</dd>	
+
+			</dl>
+
+
+			<dl>
+			<dt>Paris</dt>
+
+			<dd>
+				<div class="row">
+	
+				<div class=".paragraph"><p>
+				Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p>
+			</div>
+					<div class="myimage"><img src="image3.jpg" style="height: 120px;width: 120px;"></div>
+
+				</div>
+			</dd>	
+
+			</dl>
+
+
+
+			<dl>
+			<dt>Rome</dt>
+
+			<dd>
+				<div class="row">
+	
+				<div class=".paragraph"><p>
+					Rome, Italy’s capital, is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display. Ancient ruins such as the Forum and the Colosseum evoke the power of the former Roman Empire. Vatican City, headquarters of the Roman Catholic Church, has St. Peter’s Basilica and the Vatican Museums, which house masterpieces such as Michelangelo’s Sistine Chapel frescoes.
+				</p>
+			</div>
+					<div class="myimage"><img src="image4.jpg" style="height: 120px;width: 120px;"></div>
+
+				</div>
+			</dd>	
+
+			</dl>
+
+
+			<dl>
+			<dt>Singapore</dt>
+
+			<dd>
+				<div class="row">
+	
+				<div class=".paragraph"><p>
+				Singapore, an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population. Its colonial core centers on the Padang, a cricket field since the 1830s and now flanked by grand buildings such as City Hall, with its 18 Corinthian columns. In Singapore's circa-1820 Chinatown stands the red-and-gold Buddha Tooth Relic Temple, said to house one of Buddha's teeth.
+				</p>
+			</div>
+					<div class="myimage"><img src="image5.jpg" style="height: 120px;width: 120px;"></div>
+
+				</div>
+			</dd>	
+
+			</dl>
+		</div>
+		
+			<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="accordian.js"></script>
+</body>
+</html>
